@@ -1,0 +1,9 @@
+
+table, tr, td {
+    border: 1px solid rgb(58, 3, 146);
+}
+
+#content h1 {
+    color: rgb(11, 20, 145);
+    text-align: center;
+}

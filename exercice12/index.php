@@ -15,16 +15,16 @@ if($_GET) {
     <title>Переводчик</title>
     <script src="jquery-1.10.2.min.js"></script>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <div id="content">
-        <h1>Переводчик</h1>
+        <h1>Traducteur Anglais-Français</h1>
         <table cellpadding="5px">
             <tr>
                 <td>
-                Язык источник:&nbsp;
+                Langue originelle:&nbsp;
                 <select id="lang_source">
                 <?php foreach($lang as $key=>$val) :?>
                 <?php if($key =='en') :?>
@@ -36,7 +36,7 @@ if($_GET) {
                 </select>
                 </td>
                 <td>
-                Язык перевода:&nbsp;
+                Langue de traduction:&nbsp;
                 <select id="lang_dest">
                 <?php foreach($lang as $key=>$val) :?>
                 <?php if($key =='ru') :?>
@@ -58,7 +58,7 @@ if($_GET) {
                 </td>
             </tr>
         </table>
-        <h3 id="click">Перевести</h3>
+        <button id="button">Перевести</button>
     </div> 
   </body>
 </html>
