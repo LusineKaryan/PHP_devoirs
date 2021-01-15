@@ -1,9 +1,37 @@
-
-table, tr, td {
-    border: 1px solid rgb(58, 3, 146);
+#content {
+    width: 950px;
+    margin: 0px auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px;
 }
 
+body {
+    background-color: gray;
+}
+
+table, tr, td {
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+#click {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#click:hover {
+    border: 1px solid white;
+    box-shadow: 5px black;
+    
+}
+
+
 #content h1 {
-    color: rgb(11, 20, 145);
+    color: rgb(100, 98, 98);
     text-align: center;
 }
