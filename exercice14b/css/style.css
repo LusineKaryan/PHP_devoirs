@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 /* header {
     display: flex;
     flex-direction: row;
@@ -36,13 +41,12 @@ ul li a {
 section {
     display:flex;
     flex-direction: row;
-    height:90%;
-    margin-bottom: 20px;
+    min-height: calc(83vh - 80px);
+    margin-top: 15px;
 }
 
 article {
     width: 70%;
-  
     background-color: rgb(151, 219, 87);
     font-size: 20px;
    
@@ -51,7 +55,7 @@ article {
 
 aside {
     width: 30%;
-    margin-left: 20px;
+    margin-left: 15px;
     font-size: 20px;
     background-color: rgb(210, 219, 87);
 
@@ -69,7 +73,6 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-
 }
 
 footer p{
