@@ -25,6 +25,14 @@ ul li a {
     color: rgb(41, 92, 138);
 } */
 
+#navbarsExample04{
+    justify-content:space-around;
+}
+
+#navbarsExample04 ul li{
+    margin-left: 30px;
+}
+
 section {
     display:flex;
     flex-direction: row;
