@@ -2,8 +2,9 @@
 
 	$tableau = array("Paul", "Pénélope", "Nicolas", "4", "Anastasia");
 	sort($tableau);
+	echo "<ul>";
 	foreach ($tableau as $key => $val) {
-		echo "[" . $key . "] - " . $val . "</br>\n";
+		echo "<li>$key " . $val . "</li>";
 	}
-
+	echo "</ul>";
 ?>
