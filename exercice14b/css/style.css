@@ -38,10 +38,14 @@ ul li a {
     margin-left: 30px;
 }
 
+.navbar-brand {
+    margin-left: 30px;
+}
+
 section {
     display:flex;
     flex-direction: row;
-    min-height: calc(83vh - 80px);
+    min-height: calc(90vh - 100px);
     margin-top: 15px;
 }
 
@@ -67,12 +71,16 @@ p {
 }
 
 footer {
-    height: 80px;
+    height: 100px;
     background-color: rgb(219, 140, 87);
-    position: absolute;
+    /* position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100%; */
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15px;
 }
 
 footer p{

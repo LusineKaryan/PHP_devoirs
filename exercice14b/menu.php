@@ -37,5 +37,16 @@
             <a class="nav-link" href="#" style="font-size:20px; color:black;">Contact</a>
           </li>
         </ul>
+        <?php
+        if (isset($_SESSION['prenom']) && isset($_SESSION['nom'])) {
+        echo "<h3>" . $_SESSION['prenom'] . " " . $_SESSION['nom'] ."</h3>";
+        echo "<p><a href='logout.php'>Se déconnecter</a></p>"; 
+        }
+        else
+        {
+        echo "<p><a href='login.php'>Se connecter</a></p>";
+        }
+        ?>     
       </div>
+               
     </nav>
