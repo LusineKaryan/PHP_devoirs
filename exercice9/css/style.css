@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    min-height: 100vh;
+}
+
 /* header {
     display: flex;
     flex-direction: row;
@@ -36,7 +40,7 @@ section {
 
 article {
     width: 70%;
-    height: 300px;
+    
     background-color: rgb(151, 219, 87);
     font-size: 20px;
 }
@@ -48,7 +52,7 @@ article p {
 aside {
     width: 30%;
     font-size: 20px;
-    height: 300px;
+
     background-color: rgb(210, 219, 87);
     margin-left: 30px;
 }
@@ -63,6 +67,9 @@ footer {
     margin-top:30px;
     height: 100px;
     background-color: rgb(219, 140, 87);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 footer p{
