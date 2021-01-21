@@ -19,10 +19,10 @@
       <div class="collapse navbar-collapse"  id="navbarsExample04">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#" style="font-size:20px; color:black;">Accueil<span class="sr-only"></span></a>
+            <a class="nav-link" href="index.php" style="font-size:20px; color:black;">Accueil<span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" style="font-size:20px; color:black;">Blog</a>
+            <a class="nav-link" href="page1.php" style="font-size:20px; color:black;">Page</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -37,16 +37,33 @@
             <a class="nav-link" href="#" style="font-size:20px; color:black;">Contact</a>
           </li>
         </ul>
-        <?php
-        if (isset($_SESSION['prenom']) && isset($_SESSION['nom'])) {
-        echo "<h3>" . $_SESSION['prenom'] . " " . $_SESSION['nom'] ."</h3>";
-        echo "<p><a href='logout.php'>Se déconnecter</a></p>"; 
-        }
-        else
-        {
-        echo "<p><a href='login.php'>Se connecter</a></p>";
-        }
-        ?>     
+        <ul class="nav nabar-nav float-md-right">
+                <?php
+                    if (isset($_SESSION['prenom']) && isset($_SESSION['nom'])) {
+                    ?>  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <?php echo ($_SESSION['prenom'] . " " . $_SESSION['nom']); ?>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dLabel" style="left: -5px;">
+                            
+                                <a href="/admin" class="dropdown-item">Tableau de bord</a>
+                                <div class="dropdown-diviseur"></div>
+                                <a href="logout.php" class="dropdown-item">Déconnexion</a>
+                            
+                        </div>
+                    </li>
+                    <?php
+                    } else {
+                    ?>
+                    <li class="nav-item">
+                        <a href="login.php" class="nav-link">Connexion</a>
+                    </li>
+                    <?php
+                    }
+                    ?>
+                </ul>
       </div>
                
     </nav>
